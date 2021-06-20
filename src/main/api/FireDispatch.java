@@ -6,13 +6,13 @@ public interface FireDispatch {
 
   /**
    * Hires a number of firefighters
-   * @param numFirefighters
+   * @param numFirefighters the number of firefighters to hire
    */
   void setFirefighters(int numFirefighters);
 
   /**
    * Get the list of firefighters
-   * @return
+   * @return the list of firefighters
    */
   List<Firefighter> getFirefighters();
 
@@ -21,5 +21,5 @@ public interface FireDispatch {
    * firefighters and extinguish the fires. We want to optimize for total distance traveled by all firefighters
    * @param burningBuildings list of locations with burning buildings
    */
-  void dispatchFirefighers(CityNode... burningBuildings);
+  void dispatchFirefighters(CityNode... burningBuildings);
 }
